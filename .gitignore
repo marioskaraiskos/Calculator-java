@@ -4,8 +4,9 @@
 # But not these files...
 !.gitignore
 
-# Don't ignore directories (so we can add files inside them)
+# Don't ignore directories (so we can include files in them)
 !*/
 
 # Allow specific file
+!src/
 !src/Main.java
