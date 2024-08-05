@@ -1,12 +1,5 @@
-# Ignore everything
-*
+/.idea
 
-# But not these files...
-!.gitignore
+/out
 
-# Don't ignore directories (so we can include files in them)
-!*/
-
-# Allow specific file
-!src/
-!src/Main.java
+/Calc-java
