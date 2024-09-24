@@ -21,6 +21,11 @@ public class Main {
         frame.add(panel);
         panel.setLayout(null);
 
+        //operators//
+        JButton equals = new JButton("=");
+        equals.setBounds(400, 160, 100, 30);
+        panel.add(equals);
+
         JButton add = new JButton("+");
         add.setBounds(100, 70, 100, 30); // x, y, width, height
         panel.add(add);
@@ -79,13 +84,12 @@ public class Main {
         zero.setBounds(300, 160, 100, 30);
         panel.add(zero);
 
+        // clear button//
         JButton clear = new JButton("clear");
         clear.setBounds(200, 160, 100, 30);
         panel.add(clear);
 
-        JButton equals = new JButton("=");
-        equals.setBounds(400, 160, 100, 30);
-        panel.add(equals);
+
 
         // textField //
         JTextField input = new JTextField(10);
