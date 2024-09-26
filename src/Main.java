@@ -12,7 +12,10 @@ public class Main {
     private static double num1 = 0;
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Simple Calculator");
+        JFrame frame = new JFrame("Calculator");
+        ImageIcon icon = new ImageIcon("Pictures/calculator.png");
+        frame.setIconImage(icon.getImage());
+
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300, 200);
 
