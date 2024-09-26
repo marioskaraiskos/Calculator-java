@@ -104,77 +104,107 @@ public class Main {
         one.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                input.setText("1");
+                if (input.getText().equals("0")) {
+                    input.setText("");
+                }
+                input.setText(input.getText() + "1");
             }
         });
 
         two.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                input.setText("2");
+                if (input.getText().equals("0")) {
+                    input.setText("");
+                }
+                input.setText(input.getText() + "2");
             }
         });
 
         three.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                input.setText("3");
+                if (input.getText().equals("0")) {
+                    input.setText("");
+                }
+                input.setText(input.getText() + "3");
             }
         });
 
         four.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                input.setText("4");
+                if (input.getText().equals("0")) {
+                    input.setText("");
+                }
+                input.setText(input.getText() + "4");
             }
         });
 
         five.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                input.setText("5");
+                if (input.getText().equals("0")) {
+                    input.setText("");
+                }
+                input.setText(input.getText() + "5");
             }
         });
 
         six.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                input.setText("6");
+                if (input.getText().equals("0")) {
+                    input.setText("");
+                }
+                input.setText(input.getText() + "6");
             }
         });
 
         seven.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                input.setText("7");
+                if (input.getText().equals("0")) {
+                    input.setText("");
+                }
+                input.setText(input.getText() + "7");
             }
         });
 
         eight.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                input.setText("8");
+                if (input.getText().equals("0")) {
+                    input.setText("");
+                }
+                input.setText(input.getText() + "8");
             }
         });
 
         nine.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                input.setText("9");
+                if (input.getText().equals("0")) {
+                    input.setText("");
+                }
+                input.setText(input.getText() + "9");
             }
         });
 
         zero.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                input.setText("0");
+                if (input.getText().equals("0")) {
+                    input.setText("");
+                }
+                input.setText(input.getText() + "0");
             }
         });
 
         equals.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                double num2 = Integer.parseInt(input.getText());
+                double num2 = Double.parseDouble(input.getText());
                 double result = 0;
                 if (operator.equals("+")) {
                     result = num1 + num2;
@@ -194,7 +224,7 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 num1 = Double.parseDouble(input.getText());
                 operator = "-";
-                input.setText("-");
+                input.setText("");
             }
         });
 
@@ -203,7 +233,7 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 num1 = Double.parseDouble(input.getText());
                 operator = "*";
-                input.setText("*");
+                input.setText("");
             }
         });
 
@@ -212,7 +242,7 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 num1 = Double.parseDouble(input.getText());
                 operator = "/";
-                input.setText("/");
+                input.setText("");
             }
         });
 
@@ -229,7 +259,7 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 num1 = Double.parseDouble(input.getText());
                 operator = "+";
-                input.setText("+");
+                input.setText("");
             }
         });
 
