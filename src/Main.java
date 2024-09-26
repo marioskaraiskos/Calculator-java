@@ -43,6 +43,10 @@ public class Main {
         multiply.setBounds(100, 160, 100, 30);
         panel.add(multiply);
 
+        JButton dot = new JButton(".");
+        dot.setBounds(100, 40, 100, 30);
+        panel.add(dot);
+
         // numbers //
         JButton one = new JButton("1");
         one.setBounds(200, 70, 100, 30);
@@ -260,6 +264,14 @@ public class Main {
                 num1 = Double.parseDouble(input.getText());
                 operator = "+";
                 input.setText("");
+            }
+        });
+        dot.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String text = input.getText();
+                if (!text.contains(".")) {
+                    input.setText(text + ".");
+                }
             }
         });
 
